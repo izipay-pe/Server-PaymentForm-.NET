@@ -31,7 +31,7 @@ Este manual está diseñado para ayudarte a comprender el flujo de la integraci�
 - Extraer credenciales del Back Office Vendedor. [Guía Aquí](https://github.com/izipay-pe/obtener-credenciales-de-conexion)
 - Para este proyecto utilizamos .NET 8.0.
 - Visual Studio
-- 
+
 > [!NOTE]
 > Tener en cuenta que, para que el desarrollo de tu proyecto, eres libre de emplear tus herramientas preferidas.
 
