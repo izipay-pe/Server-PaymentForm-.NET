@@ -18,7 +18,7 @@ namespace Server.NET.Controllers
             _configuration = configuration;
         }
 
-        // @@ Manejo de solicitudes POST para checkout @@
+        // @@ Manejo de solicitudes POST para el formtoken @@
         [HttpPost("/formToken")]
         public async Task<IActionResult> Checkout([FromBody] PaymentRequest paymentRequest)
         {
@@ -88,7 +88,7 @@ namespace Server.NET.Controllers
             }
         }
 
-        // @@ Manejo de solicitudes POST para result @@
+        // @@ Manejo de solicitudes POST para validate @@
         [HttpPost("/validate")]
         public IActionResult Result([FromBody] JsonElement jsonData)
         {
@@ -105,6 +105,7 @@ namespace Server.NET.Controllers
             return Ok(true);
         }
 
+        // @@ Manejo de solicitudes POST para IPN @@
         [HttpPost("/ipn")]
         public IActionResult Ipn([FromForm] IFormCollection form)
         {
